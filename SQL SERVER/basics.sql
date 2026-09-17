@@ -55,3 +55,24 @@ SELECT empName, designation from Employee where not designation='Product Manager
 
 SELECT empName, designation, salary from Employee where not designation='Product Manager'
 AND salary <= 88000; 
+
+
+-- OR
+
+SELECT id, empName, designation, salary from Employee where not designation='Product Manager'
+OR salary <= 88000; 
+
+SELECT id, empName, designation, salary from Employee where designation='Product Manager'
+OR salary <= 88000; 
+
+SELECT id, empName, designation, salary from Employee where not designation='Product Manager'
+OR salary > 88000;
+
+-- between
+
+SELECT * FROM Employee where id between 2 and 6;
+
+-- SEARCH QUERY %K%
+
+
+
