@@ -17,7 +17,7 @@ CREATE TABLE Employee(
 	deptId INT
 );
 -- Single record insert
-INSERT INTO Employee VALUES('Hanzala', 'Software Developer', 78000, 'Karachi', null);
+INSERT INTO Employee VALUES('Abu Bakar', 'DBA', 128000, 'Hyderabad', null);
 
 -- Read Table records
 SELECT * FROM Employee;
@@ -72,7 +72,38 @@ OR salary > 88000;
 
 SELECT * FROM Employee where id between 2 and 6;
 
--- SEARCH QUERY %K%
+-- like && SEARCH QUERY %K%
+SELECT * FROM Employee where city like '%Ka%';
+
+SELECT * FROM Employee where designation like '%Mob%';
+
+SELECT * FROM Employee where city like '%I%' AND designation like '%Senior%';
+
+-- IN
+SELECT * FROM Employee where city IN ('Islamabad');
+
+-- Order By
+SELECT * FROM Employee order by empName asc;
 
 
+SELECT * FROM Employee order by salary desc;
 
+-- Top
+SELECT top 4 * FROM Employee;
+
+SELECT top 70 percent * FROM Employee;
+
+-- aggregate functions
+
+SELECT COUNT(empName) as total_employees FROM Employee;
+
+SELECT MIN(salary) as min_salary FROM Employee;
+
+SELECT MAX(salary) as max_salary FROM Employee;
+
+SELECT SUM(salary) as total_salary FROM Employee;
+
+SELECT AVG(salary) as avg_salary FROM Employee;
+
+SELECT CONCAT(empName, ' has a designation of ', designation, ' has salary of ', salary)
+as EmpDetails from Employee;
