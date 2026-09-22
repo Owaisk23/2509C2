@@ -107,3 +107,77 @@ SELECT AVG(salary) as avg_salary FROM Employee;
 
 SELECT CONCAT(empName, ' has a designation of ', designation, ' has salary of ', salary)
 as EmpDetails from Employee;
+
+-- SUB QUERIES
+SELECT empName, salary FROM Employee where salary < (SELECT AVG(salary)
+as avg_salary FROM Employee);
+
+--GROUP BY
+
+SELECT city, COUNT(id) as EmpCount FROM Employee GROUP BY city;
+
+SELECT city, MAX(salary) as MaxSalary FROM Employee GROUP BY city;
+
+SELECT city, MIN(salary) as MinSalary FROM Employee GROUP BY city;
+
+SELECT city, SUM(salary) as TotalSalary FROM Employee GROUP BY city;
+
+INSERT INTO Employee(empName, designation, salary, city, deptId) VALUES
+('Bisma', 'MANAGER', 265000, 'Karachi', null),
+('Iqra', 'MANAGER', 190000, 'Lahore', null),
+('Humaira', 'MANAGER', 330000, 'Islamabad', null);
+
+SELECT designation, COUNT(id) as EmpCount FROM Employee
+GROUP BY designation having designation = 'MANAGER';
+
+-- NEW TABLE OF DEPARTMENT
+
+CREATE TABLE Department(
+deptId INT PRIMARY KEY IDENTITY(1,1),
+deptName VARCHAR(50) NOT NULL
+);
+
+INSERT INTO Department VALUES 
+('Academics'),('SRO'), ('TECH'), ('Marketing'), ('Exam');
+
+SELECT * FROM Department;
+
+
+INSERT INTO Department VALUES 
+('Placement'),('Admin');
+
+SELECT * FROM Employee;
+
+TRUNCATE TABLE Department;
+
+DROP TABLE Employee;
+
+-- table creation
+CREATE TABLE Employee(
+	id INT PRIMARY KEY IDENTITY(1,1),
+	empName VARCHAR(255) NOT NULL,
+	designation VARCHAR(255) NOT NULL,
+	salary INT NOT NULL,
+	city VARCHAR(255) NOT NULL,
+	deptId INT,
+	FOREIGN KEY (deptId) references Department(deptId)
+	-- FK     own table key   ref    tablename(tablekey)
+);
+
+
+INSERT INTO Employee(empName, designation, salary, city, deptId) VALUES
+('Ahad', 'CAH', 480000, 'Karachi', 1),
+('Imran', 'Faculty Member', 80000, 'Karachi', 1),
+('Anwar', 'Network Assistant', 88000, 'Karachi', 3),
+('Rayyan', 'Admin Manager', 128000, 'Karachi', 7),
+('Nabeel', 'SRO Head', 82000, 'Karachi', 2),
+('Farmil', 'Senior Marketing Agent', 90000, 'Karachi', 4),
+('Fasiha', 'Batch Coordinator', 75000, 'Karachi', 1),
+('Sidrah', 'Manager Academics', 178000, 'Karachi', 1),
+('Bisma', 'Examination Head', 265000, 'Karachi', 5),
+('Iqra', 'DCAH', 190000, 'Karachi', 1),
+('Humaira', 'SRO', 330000, 'Karachi', 2);
+
+SELECT empName, designation, deptName, city, salary FROM Employee as emp
+INNER JOIN Department as d on emp.deptId = d.deptId;
+
