@@ -181,3 +181,20 @@ INSERT INTO Employee(empName, designation, salary, city, deptId) VALUES
 SELECT empName, designation, deptName, city, salary FROM Employee as emp
 INNER JOIN Department as d on emp.deptId = d.deptId;
 
+SELECT empName, designation, deptName, city, salary FROM Employee as emp
+LEFT JOIN Department as d on emp.deptId = d.deptId;
+
+SELECT empName, designation, deptName, city, salary FROM Employee as emp
+RIGHT JOIN Department as d on emp.deptId = d.deptId;
+
+SELECT empName, designation, deptName, city, salary FROM Department as d 
+LEFT JOIN Employee as emp  on  d.deptId = emp.deptId;
+
+SELECT empName, designation, deptName, city, salary FROM Department as d 
+RIGHT JOIN Employee as emp  on  d.deptId = emp.deptId;
+
+SELECT empName, designation, deptName, city, salary FROM Department as d 
+FULL OUTER JOIN Employee as emp  on  d.deptId = emp.deptId;
+
+INSERT INTO Employee(empName, designation, salary, city) VALUES
+('Ahad', 'CAH', 480000, 'Karachi');
