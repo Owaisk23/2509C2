@@ -219,3 +219,20 @@ SELECT name, create_date FROM sys.views;
 
 DROP VIEW empDeptNames;
 
+-- DCL: Data Control Language
+
+SELECT * FROM sys.sql_logins;
+
+CREATE LOGIN ACC_EMP WITH PASSWORD='555';
+
+CREATE USER ACC_EMP FROM LOGIN ACC_EMP;
+ 
+-- IZAJAT = GRANT
+GRANT SELECT on dbo.Employee TO ACC_EMP;
+
+GRANT INSERT, DELETE on dbo.Employee TO ACC_EMP;
+
+-- REVOKE
+REVOKE SELECT on dbo.Employee TO ACC_EMP;
+
+DROP LOGIN ACC_EMP;
