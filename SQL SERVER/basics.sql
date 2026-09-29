@@ -198,3 +198,24 @@ FULL OUTER JOIN Employee as emp  on  d.deptId = emp.deptId;
 
 INSERT INTO Employee(empName, designation, salary, city) VALUES
 ('Ahad', 'CAH', 480000, 'Karachi');
+
+-- Views
+SELECT empName, designation FROM Employee;
+
+CREATE VIEW [empDesignationName]
+AS
+SELECT empName, designation FROM Employee;
+
+SELECT * FROM empDesignationName;
+
+
+CREATE VIEW [deptNames]
+AS
+SELECT deptName FROM Department;
+
+SELECT * FROM deptNames;
+
+SELECT name, create_date FROM sys.views;
+
+DROP VIEW empDeptNames;
+
