@@ -236,3 +236,43 @@ GRANT INSERT, DELETE on dbo.Employee TO ACC_EMP;
 REVOKE SELECT on dbo.Employee TO ACC_EMP;
 
 DROP LOGIN ACC_EMP;
+
+-- STORED PROCEDURES
+
+CREATE PROCEDURE SeeEmp
+AS
+BEGIN
+SELECT * FROM Employee
+END;
+
+SeeEmp;
+
+CREATE PROCEDURE SeeEmp6
+AS
+BEGIN
+SELECT * FROM Employee where id=6
+END;
+
+SeeEmp6;
+
+CREATE PROCEDURE AddEmp @Name varchar(255), @desig varchar(255), @sal int, @city varchar(65),
+@dId int 
+AS
+BEGIN
+INSERT INTO Employee VALUES (@Name, @desig, @sal, @city, @dId)
+SELECT * FROM Employee
+END;
+
+AddEmp @Name='Taha', @desig='Manager', @sal=156000, @city='Isl', @dId=6;
+
+
+AddEmp @Name='Karim', @desig='SEO Developer', @sal=126000, @city='Lahore', @dId=1;
+
+-- TRIGGER 
+CREATE TRIGGER AddEmp_trigger
+ON Employee FOR INSERT
+AS
+BEGIN
+print('a new employee added successfully.')
+END;
+
