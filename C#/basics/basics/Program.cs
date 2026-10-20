@@ -48,7 +48,7 @@ Console.WriteLine("Hello, World!");
 
 //Comparison Operators
 
-int a = 45; int b = 70;
+//int a = 45; int b = 70;
 
 //Console.WriteLine(a == b); // F
 //Console.WriteLine(a != b); // T
@@ -156,9 +156,9 @@ int a = 45; int b = 70;
 
 // STRING INTERPOLATION
 
-int twentythree = 23;
+//int twentythree = 23;
 
-Console.WriteLine($"Ahsan age is {twentythree}");
+//Console.WriteLine($"Ahsan age is {twentythree}");
 
 //FOR LOOP
 
@@ -241,28 +241,138 @@ Console.WriteLine($"Ahsan age is {twentythree}");
 
 //Console.WriteLine(temperatures[5]);
 
-int[] itemPrice = [460, 885, 1150, 225, 964, 870, 665, 750];
+//int[] itemPrice = [460, 885, 1150, 225, 964, 870, 665, 750];
 
-foreach (var item in itemPrice)
-{
-    Console.WriteLine(item);
-}
-
-string[] countries = ["Pak", "Iran", "China", "Pak", "Afg", "Ban" ];
-
-////Array.Sort(countries);
-//Array.Reverse(countries);
-
-
-//foreach (var country in countries)
+//foreach (var item in itemPrice)
 //{
-//    Console.WriteLine(country);
+//    Console.WriteLine(item);
 //}
 
-Console.WriteLine(Array.IndexOf(countries, "China"));
-Console.WriteLine(Array.LastIndexOf(countries, "Pak"));
+//string[] countries = ["Pak", "Iran", "China", "Pak", "Afg", "Ban" ];
+
+//////Array.Sort(countries);
+////Array.Reverse(countries);
 
 
+////foreach (var country in countries)
+////{
+////    Console.WriteLine(country);
+////}
+
+//Console.WriteLine(Array.IndexOf(countries, "China"));
+//Console.WriteLine(Array.LastIndexOf(countries, "Pak"));
+
+// Multi-Dimentional Arrays
+
+//int[,] multiArr =
+//{
+//    {56, 65},
+//    {11, 22},
+//    {33, 44},
+//    {77, 88},
+//    {43, 23},
+//    {32, 35},
+//    {98, 89},
+//};
+
+//Console.WriteLine(multiArr[5,0]);
+
+//for (int i = 0; i < multiArr.GetLength(0); i++)
+//{
+//    for (int j = 0; j < multiArr.GetLength(1); j++)
+//    {
+//        Console.WriteLine(multiArr[i,j]);
+//    }
+//}
+
+//C# unintialized variable bool = true, int = 0,str = null by default
+
+//Math.power
+
+//Console.WriteLine(Math.Pow(2, 3));
+
+//Jagged  Array
+//size of sub array is not fixed
+
+//string[][] skillSet =
+//{
+//    new string[6] {"HTML", "CSS", "JS", "Bootstrap", "SEO", "UIUX"},
+//    new string[5] {"MySQL", "PHP", "LARAVEL", "CMS", "FME"},
+//    new string[4] {"SQL SERVER", "C#", "DOTNET", "Angular"},
+//    new string[3] {"MongoDB", "ReactJS", "EXPRESSJS" },
+//    new string[2] {"DART", "FLUTTER" }
+//};
+
+
+//Console.WriteLine(skillSet[2][2]);
+
+//for(int i = 0; i < skillSet.Length; i++)
+//{
+//    for(int j = 0; j < skillSet[i].Length; j++)
+//    {
+//        Console.WriteLine(skillSet[i][j]);
+//    }
+//}
+
+//foreach(var  skills in skillSet)
+//{
+//    foreach(var skill in skills)
+//    {
+//        Console.WriteLine(skill);
+//    }
+//}
+
+// FUNCTIONS IN C#
+
+//return type  funcName() {body}
+//No return no parameter
+//void Greet()
+//{
+//    Console.WriteLine("Good Afternoon 2509C2");
+//}
+
+//calling
+//Greet();
+//Greet();
+//Greet();
+
+
+//No return with parameter
+//void Greet(string name)
+//{
+//    Console.WriteLine($"Hi, {name}, Good Afternoon!");
+//}
+
+////calling
+//Greet("Imran");
+//Greet("Saqib");
+//Greet("Farmil");
+
+// return no parameter
+//string Greet()
+//{
+//    return "Welcome to our Company!";
+//}
+
+////calling
+//Console.WriteLine(Greet());
+
+int Add()
+{
+    return 32 + 35;
+}
+Console.WriteLine(Add());
+
+
+
+//return with parameter
+
+string empDetails(string name, byte age)
+{
+    return ($"Employee name: {name}. \nEmployee age: {age}");
+}
+
+Console.WriteLine(empDetails("Imran", 24));
 
 
 
