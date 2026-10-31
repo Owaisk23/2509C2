@@ -1,4 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using System.Collections;
+
 Console.WriteLine("Hello, World!");
 
 ////DATATYPES
@@ -357,22 +359,402 @@ Console.WriteLine("Hello, World!");
 ////calling
 //Console.WriteLine(Greet());
 
-int Add()
+//int Add()
+//{
+//    return 32 + 35;
+//}
+//Console.WriteLine(Add());
+
+
+
+////return with parameter
+
+//string empDetails(string name, byte age)
+//{
+//    return ($"Employee name: {name}. \nEmployee age: {age}");
+//}
+
+//Console.WriteLine(empDetails("Imran", 24));
+
+// DATA STRUCTURES
+//COLLECTIONS
+
+//GENERIC COLLECTION = datatype zaroor batani prhte hai | Fixed Datatype
+//LIST, STACK, QUEUE, Dictionary
+
+//LIST: Add, Remove, Contains, AddRange, RemoveRange
+
+//List<string> SuperCars = new List<string>();
+//SuperCars.Add("Supra");
+//SuperCars.Add("Mark X");
+//SuperCars.Add("BMW");
+//SuperCars.Add("Audi");
+
+
+//List<string> Cars = new List<string>();
+//Cars.Add("Accord");
+//Cars.Add("City");
+//Cars.Add("Civic");
+//Cars.Add("Carolla");
+//Cars.Add("Cultus");
+
+////Console.WriteLine(Cars[4]);
+////Console.WriteLine(Cars.Count);
+//Console.WriteLine(Cars.Contains("Civic"));
+////Console.WriteLine(Cars.Revmove("Civic"));
+////Cars.RemoveAt(0);
+
+//Cars.AddRange(SuperCars);
+//Cars.RemoveRange(1, 5);
+//Cars.Insert(3, "Boss");
+
+
+//foreach (string Car in Cars)
+//{
+//    Console.WriteLine(Car);
+//}
+
+////QUEUE (FIFO: first in first out)
+////ENQUEUE: Add / Insert
+
+//Queue<string> stdNames = new Queue<string>();
+//stdNames.Enqueue("Imran");
+//stdNames.Enqueue("Hunzila");
+//stdNames.Enqueue("Saqib");
+//stdNames.Enqueue("Rayyan");
+//stdNames.Enqueue("Anwar");
+//stdNames.Enqueue("Abubakar");
+//stdNames.Enqueue("Nabeel");
+
+////DEQUEUE: Remove / Delete
+//stdNames.Dequeue(); //Imran
+//stdNames.Dequeue(); //Hunzila
+//stdNames.Dequeue(); //Saqib
+
+//foreach (var name in stdNames)
+//{
+//    Console.WriteLine(name);
+//}
+
+////STACK (LIFO: Last in first out)
+////Push: Add / Insert
+
+//Stack<string> birds = new Stack<string>();
+//birds.Push("Electus");
+//birds.Push("Amazon");
+//birds.Push("Finch");
+//birds.Push("Maccow");
+//birds.Push("Love Birds");
+
+
+////Pop: Remove / Delete
+//birds.Pop();//Love Birds
+
+//foreach (var name in birds)
+//{
+//    Console.WriteLine(name);
+//}
+
+
+// Dictionary(key: value)
+//add, remove
+
+//Dictionary<string, string> empDetails = new Dictionary<string, string>();
+
+//empDetails.Add("empName", "Haris");
+//empDetails.Add("empDesignation", "DCAH");
+//empDetails.Add("empAddress", "Johar Khi");
+//empDetails.Add("empImg", "haris.jpg");
+//empDetails.Add("empEmail", "haris@aptechnorth.edu.pk");
+//empDetails.Add("empPass", "Haris7778");
+
+
+//Console.WriteLine(empDetails["empImg"]);
+//foreach (var item in empDetails)
+//{
+//    string[] test = (item.ToString().Split(','));   
+//    //string key = test[0]; // [
+//    //string value = test[1]; // ]
+
+//    string key = test[0].Trim('[');
+//    string value = test[1].Trim(']');
+
+//    Console.WriteLine(key);
+//    Console.WriteLine(value);
+//    Console.WriteLine(item);
+
+
+//    Console.WriteLine($"The employee has key property: {key} and value property: {value}");
+//}
+
+
+
+//foreach (var item in empDetails)
+//{
+//    Console.WriteLine(item.Key + " : " + item.Value);
+//}
+
+// Hashtables
+
+//Hashtable students = new Hashtable();
+//students.Add("stdName", "Imran");
+//students.Add("stdMarks", 89);
+//students.Add("stdExamStatus", "Pass");
+//students.Add("stdImg", "imran.jpg");
+//students.Add("stdValid", true);
+
+//Console.WriteLine(students["stdName"]);
+//Console.WriteLine(students.Contains("stdMarks"));
+//Console.WriteLine(students.ContainsValue(89));
+
+//foreach(DictionaryEntry student in students)
+//{
+//    Console.WriteLine(student.Key + " : " + student.Value);
+//}
+
+//Console.WriteLine(students.GetHashCode());
+
+//NON-GENERIC Collections (No FIX DATATYPES)
+
+//ARRAYLIST
+
+//ArrayList Cars = new ArrayList();
+//Cars.Add("Civic");
+//Cars.Add("Honda");
+//Cars.Add("Black");
+//Cars.Add(1800);
+//Cars.Add(.70f);
+//Cars.Add(true);
+
+//Console.WriteLine(Cars.Count);
+////Console.WriteLine(Cars.Contains("Boss"));
+//Cars.RemoveAt(3);
+
+//foreach (var Car in Cars)
+//{
+//    Console.WriteLine(Car);
+//}
+
+
+//String Methods
+
+//string test = """{ "name": "John Doe"}""";
+//string test = "John Doe";
+
+//string test = "we are learning \"C#\"";
+
+//Console.WriteLine(test);
+//Console.WriteLine(test.Replace("learning", "Mastering"));
+
+//CODING BEST PRACTICES
+// Indentation (Readable by using spaces and new lines)
+//Comments
+//Meaningful Identifiers(Variables names) student -> std || X->a,b,c
+//errors (exception handling)
+// less repeatation
+
+//OOP(Object Oriented Programming)
+//it is an approach to code cleaner and better
+//readable
+//reuseable
+//optimize
+//proper structure of the code is maintained.
+
+//Interitance
+//1. Single level inheritance Vehicle -> Car
+//2. Multi level inheritance Vehicle -> Car -> ECar
+//3. Heirarchial inheritance Vehicle -> Car, Vehicle -> Bike 
+//4. Multiple Inheritance
+//5. Hybrid Inheritance Vehicle -> Car, Vehicle -> Car -> ECar, Car -> ECar
+
+
+
+//Aeroplane Boeing707 = new Aeroplane();//default constructor
+//CLASS   OBJNAME          CONSTRUCTOR
+
+//Boeing707.Name = "Boeing 707";
+//Boeing707.takeOff();
+//Console.WriteLine(Boeing707.AirLine);
+
+//Aeroplane f16 = new Aeroplane("PAF");
+//f16.takeOff();
+
+//Aeroplane f17 = new Aeroplane("PAF", "F-17 Thunder", 2, 2, "8500hp");
+//f17.takeOff();
+//f17.land();
+
+//class ClassNamae{
+//default constructor
+//parametrized constructor
+//methods
+//}
+
+
+
+
+
+
+//public class Aeroplane
+//{
+//    //access modifiers: public: access from anywhere, private: access within the class, protected: access within the class + child classes
+//    public string? AirLine;
+//    public string? Name;
+//    public int Seats;
+//    public int Crew;
+//    public string? Power;
+
+//    //Contstructor
+//    public Aeroplane()
+//    {
+//        this.AirLine = "Not specified";
+//        this.Name = "unknown";
+//        this.Seats = 0;
+//        this.Crew = 0;
+//        this.Power = null;
+//    }
+
+//    public Aeroplane(string Name)
+//    {
+//        this.AirLine = "Not specified";
+//        this.Name = Name;
+//        this.Seats = 0;
+//        this.Crew = 0;
+//        this.Power = null;
+//    }
+
+
+//    //    //Paremeterized constructor (Overloading)
+//    public Aeroplane(string ALine, string name, int seat, int crew, string pow)
+//    {
+//        this.AirLine = ALine;
+//        this.Name = name;
+//        this.Seats = seat;
+//        this.Crew = crew;
+//        this.Power = pow;
+//    }
+//    // Methods
+//    public void takeOff()
+//    {
+//        Console.WriteLine($"{this.Name} is taking off. Best Wishes..!");
+//    }
+//    public void land()
+//    {
+//        Console.WriteLine($"{this.Name} is Landing at the 4th runway..! ");
+//    }
+
+//}
+
+//2. Polymorphism
+// Method Overloading
+// Method Overriding
+//3. Abstraction
+//4. Encapsulation
+
+//Inheritance
+//Vehicle abc = new Vehicle("AAZ-789", "Metallic grey");
+//abc.Run();
+
+
+Car mercedez = new Car("TZ-8908", "Black", "Mercedez", "Benz C-Class", 20000000);
+//mercedez.Run();
+mercedez.Run(500);
+
+//// Parent class | Base Class | Super Class
+public class Vehicle
 {
-    return 32 + 35;
+    public string regNo;
+    public string color;
+
+    public Vehicle(string regno, string color)
+    {
+        this.regNo = regno;
+        this.color = color;
+    }
+    public void Run()
+    {
+        Console.WriteLine($"{this.regNo} vehicle started running");
+    }
 }
-Console.WriteLine(Add());
-
-
-
-//return with parameter
-
-string empDetails(string name, byte age)
+//// Child class | Derived Class | Sub Class
+public class Car : Vehicle
 {
-    return ($"Employee name: {name}. \nEmployee age: {age}");
+
+    public string brand;
+    public string model;
+    public int price;
+
+    public Car(string regno, string color, string brand, string model, int price) : base(regno, color)
+    {
+        this.brand = brand;
+        this.model = model;
+        this.price = price;
+    }
+
+    //method overriding
+    public void Run()
+    {
+        Console.WriteLine($"{this.brand} {this.model} {this.regNo} started running");
+    }
+    //method overloading
+    public void Run(int speed)
+    {
+        Console.WriteLine($"{this.brand} {this.model} {this.regNo} started running at {speed} MPH.");
+    }
+
 }
 
-Console.WriteLine(empDetails("Imran", 24));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
