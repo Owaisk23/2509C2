@@ -12,9 +12,24 @@ namespace FirstProject.Controllers
         {
             _logger = logger;
         }
-
+        [HttpGet]
         public IActionResult Index()
         {
+            //TempData["CompanyName"] = "APTECH LEARNING PAKISTAN";
+            //TempData.Keep();
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Index(string email, string pwd)
+        {
+            if(email == "admin@aptech.com" && pwd == "aptech")
+            {
+                TempData["email"] = "Hello " + email;
+                TempData.Keep();
+
+                return RedirectToAction("Privacy");
+            }
             return View();
         }
         public IActionResult Products()
@@ -23,16 +38,21 @@ namespace FirstProject.Controllers
         }
         public IActionResult About()
         {
+            ViewBag.userName = "Ashar Ahmed";
+            ViewBag.userDesignation = "Software Engineer";
+            
             return View();
         }
         
         public IActionResult Contact()
         {
+            ViewData["Address"] = "North Nazimabad Block A";
             return View();
         }
 
         public IActionResult Privacy()
         {
+            TempData.Keep();
             return View();
         }
 

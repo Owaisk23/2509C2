@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "Z:\\Desktop\\2509C2\\DOTNET\\FirstProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{23BA014E-7FD7-4B41-BA1F-D27FEA16EE61}|FirstProject\\FirstProject.csproj|z:\\desktop\\2509c2\\dotnet\\firstproject\\firstproject\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{23BA014E-7FD7-4B41-BA1F-D27FEA16EE61}|FirstProject\\FirstProject.csproj|solutionrelative:firstproject\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{23BA014E-7FD7-4B41-BA1F-D27FEA16EE61}|FirstProject\\FirstProject.csproj|z:\\desktop\\2509c2\\dotnet\\firstproject\\firstproject\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{23BA014E-7FD7-4B41-BA1F-D27FEA16EE61}|FirstProject\\FirstProject.csproj|solutionrelative:firstproject\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{23BA014E-7FD7-4B41-BA1F-D27FEA16EE61}|FirstProject\\FirstProject.csproj|z:\\desktop\\2509c2\\dotnet\\firstproject\\firstproject\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{23BA014E-7FD7-4B41-BA1F-D27FEA16EE61}|FirstProject\\FirstProject.csproj|solutionrelative:firstproject\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23BA014E-7FD7-4B41-BA1F-D27FEA16EE61}|FirstProject\\FirstProject.csproj|z:\\desktop\\2509c2\\dotnet\\firstproject\\firstproject\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{23BA014E-7FD7-4B41-BA1F-D27FEA16EE61}|FirstProject\\FirstProject.csproj|solutionrelative:firstproject\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{23BA014E-7FD7-4B41-BA1F-D27FEA16EE61}|FirstProject\\FirstProject.csproj|z:\\desktop\\2509c2\\dotnet\\firstproject\\firstproject\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -19,16 +23,12 @@
       "RelativeMoniker": "D:0:0:{23BA014E-7FD7-4B41-BA1F-D27FEA16EE61}|FirstProject\\FirstProject.csproj|solutionrelative:firstproject\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{23BA014E-7FD7-4B41-BA1F-D27FEA16EE61}|FirstProject\\FirstProject.csproj|z:\\desktop\\2509c2\\dotnet\\firstproject\\firstproject\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{23BA014E-7FD7-4B41-BA1F-D27FEA16EE61}|FirstProject\\FirstProject.csproj|solutionrelative:firstproject\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{23BA014E-7FD7-4B41-BA1F-D27FEA16EE61}|FirstProject\\FirstProject.csproj|z:\\desktop\\2509c2\\dotnet\\firstproject\\firstproject\\views\\home\\products.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{23BA014E-7FD7-4B41-BA1F-D27FEA16EE61}|FirstProject\\FirstProject.csproj|solutionrelative:firstproject\\views\\home\\products.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{23BA014E-7FD7-4B41-BA1F-D27FEA16EE61}|FirstProject\\FirstProject.csproj|z:\\desktop\\2509c2\\dotnet\\firstproject\\firstproject\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{23BA014E-7FD7-4B41-BA1F-D27FEA16EE61}|FirstProject\\FirstProject.csproj|solutionrelative:firstproject\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{23BA014E-7FD7-4B41-BA1F-D27FEA16EE61}|FirstProject\\FirstProject.csproj|z:\\desktop\\2509c2\\dotnet\\firstproject\\firstproject\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{23BA014E-7FD7-4B41-BA1F-D27FEA16EE61}|FirstProject\\FirstProject.csproj|solutionrelative:firstproject\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,46 +46,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Contact.cshtml",
               "DocumentMoniker": "Z:\\Desktop\\2509C2\\DOTNET\\FirstProject\\FirstProject\\Views\\Home\\Contact.cshtml",
               "RelativeDocumentMoniker": "FirstProject\\Views\\Home\\Contact.cshtml",
-              "ToolTip": "Z:\\Desktop\\2509C2\\DOTNET\\FirstProject\\FirstProject\\Views\\Home\\Contact.cshtml*",
-              "RelativeToolTip": "FirstProject\\Views\\Home\\Contact.cshtml*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAGAAAAAAAAAA==",
+              "ToolTip": "Z:\\Desktop\\2509C2\\DOTNET\\FirstProject\\FirstProject\\Views\\Home\\Contact.cshtml",
+              "RelativeToolTip": "FirstProject\\Views\\Home\\Contact.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-11-12T06:30:46.35Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "Privacy.cshtml",
               "DocumentMoniker": "Z:\\Desktop\\2509C2\\DOTNET\\FirstProject\\FirstProject\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "FirstProject\\Views\\Home\\Privacy.cshtml",
-              "ToolTip": "Z:\\Desktop\\2509C2\\DOTNET\\FirstProject\\FirstProject\\Views\\Home\\Privacy.cshtml",
-              "RelativeToolTip": "FirstProject\\Views\\Home\\Privacy.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ToolTip": "Z:\\Desktop\\2509C2\\DOTNET\\FirstProject\\FirstProject\\Views\\Home\\Privacy.cshtml*",
+              "RelativeToolTip": "FirstProject\\Views\\Home\\Privacy.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-11-12T06:28:20.808Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "About.cshtml",
               "DocumentMoniker": "Z:\\Desktop\\2509C2\\DOTNET\\FirstProject\\FirstProject\\Views\\Home\\About.cshtml",
               "RelativeDocumentMoniker": "FirstProject\\Views\\Home\\About.cshtml",
               "ToolTip": "Z:\\Desktop\\2509C2\\DOTNET\\FirstProject\\FirstProject\\Views\\Home\\About.cshtml",
               "RelativeToolTip": "FirstProject\\Views\\Home\\About.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-11-10T07:53:07.05Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Products.cshtml",
               "DocumentMoniker": "Z:\\Desktop\\2509C2\\DOTNET\\FirstProject\\FirstProject\\Views\\Home\\Products.cshtml",
               "RelativeDocumentMoniker": "FirstProject\\Views\\Home\\Products.cshtml",
@@ -93,17 +93,16 @@
               "RelativeToolTip": "FirstProject\\Views\\Home\\Products.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-10T07:49:07.027Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-10T07:49:07.027Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "Z:\\Desktop\\2509C2\\DOTNET\\FirstProject\\FirstProject\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "FirstProject\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "Z:\\Desktop\\2509C2\\DOTNET\\FirstProject\\FirstProject\\Views\\Shared\\_Layout.cshtml*",
-              "RelativeToolTip": "FirstProject\\Views\\Shared\\_Layout.cshtml*",
+              "ToolTip": "Z:\\Desktop\\2509C2\\DOTNET\\FirstProject\\FirstProject\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "FirstProject\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAABIAAAAAAAAAAAAAAB8AAABvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-11-10T07:43:38.27Z",
@@ -111,13 +110,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
               "DocumentMoniker": "Z:\\Desktop\\2509C2\\DOTNET\\FirstProject\\FirstProject\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "FirstProject\\Views\\Home\\Index.cshtml",
-              "ToolTip": "Z:\\Desktop\\2509C2\\DOTNET\\FirstProject\\FirstProject\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "FirstProject\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "ToolTip": "Z:\\Desktop\\2509C2\\DOTNET\\FirstProject\\FirstProject\\Views\\Home\\Index.cshtml*",
+              "RelativeToolTip": "FirstProject\\Views\\Home\\Index.cshtml*",
+              "ViewState": "AgIAABEAAAAAAAAAAAAmwB4AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-11-10T07:20:41.242Z",
               "EditorCaption": ""
@@ -130,7 +129,7 @@
               "RelativeDocumentMoniker": "FirstProject\\Controllers\\HomeController.cs",
               "ToolTip": "Z:\\Desktop\\2509C2\\DOTNET\\FirstProject\\FirstProject\\Controllers\\HomeController.cs*",
               "RelativeToolTip": "FirstProject\\Controllers\\HomeController.cs*",
-              "ViewState": "AgIAAAoAAAAAAAAAAAA1wBwAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwBsAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-10T07:20:25.413Z",
               "EditorCaption": ""
