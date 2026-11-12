@@ -655,56 +655,309 @@ Console.WriteLine("Hello, World!");
 //abc.Run();
 
 
-Car mercedez = new Car("TZ-8908", "Black", "Mercedez", "Benz C-Class", 20000000);
-//mercedez.Run();
-mercedez.Run(500);
+//Car mercedez = new Car("TZ-8908", "Black", "Mercedez", "Benz C-Class", 20000000);
+////mercedez.Run();
+//mercedez.Run(500);
 
-//// Parent class | Base Class | Super Class
-public class Vehicle
+////// Parent class | Base Class | Super Class
+//public class Vehicle
+//{
+//    public string regNo;
+//    public string color;
+
+//    public Vehicle(string regno, string color)
+//    {
+//        this.regNo = regno;
+//        this.color = color;
+//    }
+//    public void Run()
+//    {
+//        Console.WriteLine($"{this.regNo} vehicle started running");
+//    }
+//}
+////// Child class | Derived Class | Sub Class
+//public class Car : Vehicle
+//{
+
+//    public string brand;
+//    public string model;
+//    public int price;
+
+//    public Car(string regno, string color, string brand, string model, int price) : base(regno, color)
+//    {
+//        this.brand = brand;
+//        this.model = model;
+//        this.price = price;
+//    }
+
+//    //method overriding
+//    public void Run()
+//    {
+//        Console.WriteLine($"{this.brand} {this.model} {this.regNo} started running");
+//    }
+//    //method overloading
+//    public void Run(int speed)
+//    {
+//        Console.WriteLine($"{this.brand} {this.model} {this.regNo} started running at {speed} MPH.");
+//    }
+
+//}
+
+/// Interfaces
+//FrontEndDeveloper ashar = new FrontEndDeveloper();
+//ashar.ComplexDesign("Ashar Ahmed");
+//ashar.SimpleDesign();
+
+//FullStackDeveloper usama = new FullStackDeveloper();
+//usama.SimpleDesign();
+//usama.ComplexAPIs();
+
+//interface topics
+//{
+
+//Interfaces,
+//        Static,
+//       Abstract
+//} 
+//interface FrontEndDevelopment
+//{
+//    public void SimpleDesign();
+//    public void ComplexDesign(string name);
+
+//}
+
+
+//interface BackEndDevelopment
+//{
+//    public void SimpleCrud();
+//    public void ComplexAPIs();
+//    public void Authentication();
+
+//}
+
+//public class FrontEndDeveloper : FrontEndDevelopment
+//{
+//    //method implementation
+//    public void SimpleDesign()
+//    {
+//        Console.WriteLine("We will provide you simple and responsive design using HTML, CSS and JS.");
+//    }
+//    public void ComplexDesign(string name)
+//    {
+//        Console.WriteLine($"Hi this is {name}, We will provide you animated and responsive design using HTML, CSS, JS, React, " +
+//            $"Nextjs.");
+//    }
+
+//}
+
+
+
+////Multiple Inheritance
+//public class FullStackDeveloper : FrontEndDevelopment, BackEndDevelopment
+//{
+//    public void SimpleDesign()
+//    {
+//        Console.WriteLine("We will provide you simple and responsive design using HTML, CSS and JS.");
+//    }
+//    public void ComplexDesign(string name)
+//    {
+//        Console.WriteLine($"Hi this is {name}, We will provide you animated and responsive design using HTML, CSS, JS, React, Nextjs.");
+//    }
+//    public void SimpleCrud()
+//    {
+//        Console.WriteLine("We will provide you simple crud operations.");
+//    }
+//    public void ComplexAPIs()
+//    {
+//        Console.WriteLine($"We will provide you complex APIs.");
+//    }
+//    public void Authentication()
+//    {
+//        Console.WriteLine($" We will provide you Authentication.");
+//    }
+//}
+
+//Access  Modifiers
+//1. Public     | anyone can access from any where in the program.
+//2. Private    | only owner class can access .
+//3. Protected  | only owner class and child class can access .
+
+
+
+//Products neckB
+
+
+//DELEGATES
+//normal delegates
+
+//MyMaths.MyMathsDelegate Eval = new MyMaths.MyMathsDelegate(MyMaths.Add);
+
+//Eval(5, 9); // 14
+
+////MultiCast Delegate
+
+//MyMaths.MyMathsDelegate MultiEval;
+
+//MultiEval = MyMaths.Mul;
+//MultiEval(5, 9); // 45
+
+//MultiEval = MyMaths.Div;
+//MultiEval(2, 0); // can't divide by zero
+
+//MultiEval = MyMaths.Sub;
+//MultiEval(4, 2); //2
+
+
+
+
+//public class MyMaths
+//{
+//    public delegate void MyMathsDelegate(double num1,  double num2);
+
+//    public static void Add(double a, double b)
+//    {
+//        Console.WriteLine(a + b);
+//    }
+
+//    public static void Sub(double a, double b)
+//    {
+//        Console.WriteLine(a - b);
+//    }
+
+//    public static void Mul(double a, double b)
+//    {
+//        Console.WriteLine(a * b);
+//    }
+
+//    public static void Div(double a, double b)
+//    {
+//        if(b != 0) 
+//            Console.WriteLine(a / b);
+//        else
+//            Console.WriteLine("Can't divide by zero");
+//    }
+//}
+
+
+//Shopping.GetItem buy;
+//buy = Shopping.GetGadgets;
+//buy("Jam", 550, "Black current jam with great delight");
+
+//public class Shopping
+//{
+//    public delegate void GetItem(string name, int price, string description);
+
+//    public static void GetEatables(string name, int price, string desc)
+//    {
+//        Console.WriteLine("You have bought eatable {0} at Rs. {1} . {2} .", name, price, desc);//placeholders
+//    }
+//    public static void GetGadgets(string name, int price, string desc)
+//    {
+//        Console.WriteLine("You have bought gaddet {0} at Rs. {1} . {2} .", name, price, desc);//placeholders
+//    }
+//}
+
+
+//getters and setters
+
+//Animal cat = new Animal();
+//cat.Name = "Tom";
+//cat.Age = 5;
+//Console.WriteLine(cat.Age);
+
+
+//public class Animal
+//{
+//    public string? Name { get; set; } //auto complete properties
+//    private int age;
+
+
+//    public int Age
+//    {
+//        get { return age; }
+
+//        set
+//        {
+
+//            if (value < 10)
+//            {
+
+//                age = value;
+//            }
+//            else
+//            {
+
+//            }
+//        }
+//    }
+//}
+
+//Records 
+
+//User ahmed = new User();
+//ahmed.id = 1;
+//ahmed.name = "Ahmed Hassan";
+
+
+//User haris = new User();
+//haris.id = 1;
+//haris.name = "Ahmed Hassan";
+
+
+//Console.WriteLine(ahmed);
+//Console.WriteLine(ahmed == haris);
+
+//User1 talha = new User1();
+//talha.id = 2;
+//talha.name = "Mirza talha";
+
+//User1 abdullah = new User1();
+//abdullah.id = 2;
+//abdullah.name = "Mirza talha";
+
+////Console.WriteLine(talha);
+//Console.WriteLine(talha == abdullah);
+
+//public class User
+//{
+//    public int id { get; set; }
+//    public string? name { get; set; }
+//}
+
+//public record User1
+//{
+//    public int id { get; set; }
+//    public string name { get; set; }
+//}
+//events
+
+myCar Civic = new myCar();
+Civic.speedUp += new myCar.speedCar(myCar.carMoved);
+Civic.drive();
+
+public class myCar
 {
-    public string regNo;
-    public string color;
+    public delegate void speedCar();
+    public event speedCar speedUp;
+    public int speed = 0;
 
-    public Vehicle(string regno, string color)
+    public void drive()
     {
-        this.regNo = regno;
-        this.color = color;
+        for (int i = 1; i < 100; i++)
+        {
+            if (i > 50)
+            {
+                speedUp();
+            }
+            Console.WriteLine($"the car is moving at {i} mph");
+            System.Threading.Thread.Sleep(1000);
+        }
     }
-    public void Run()
+    public static void carMoved()
     {
-        Console.WriteLine($"{this.regNo} vehicle started running");
+        Console.WriteLine("the speed limit has exceeded");
     }
 }
-//// Child class | Derived Class | Sub Class
-public class Car : Vehicle
-{
-
-    public string brand;
-    public string model;
-    public int price;
-
-    public Car(string regno, string color, string brand, string model, int price) : base(regno, color)
-    {
-        this.brand = brand;
-        this.model = model;
-        this.price = price;
-    }
-
-    //method overriding
-    public void Run()
-    {
-        Console.WriteLine($"{this.brand} {this.model} {this.regNo} started running");
-    }
-    //method overloading
-    public void Run(int speed)
-    {
-        Console.WriteLine($"{this.brand} {this.model} {this.regNo} started running at {speed} MPH.");
-    }
-
-}
-
-
-
 
 
 
